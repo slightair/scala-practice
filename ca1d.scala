@@ -19,8 +19,8 @@ def tick(state: List[Int]) = neighbors(state).map(neighbor => nextState(pattern(
 
 // main
 for (cells <- List.iterate(InitialState, Trial)(state => tick(state))) {
-    println(new String(cells.map(cell => cell match {
+    println(new String(cells.map{
         case 0 => ' '
         case 1 => '*'
-    }).toArray))
+    }.toArray))
 }
