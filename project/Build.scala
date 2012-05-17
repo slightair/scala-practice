@@ -10,6 +10,7 @@ object ProjectBuild extends Build {
       name := "scala-practice",
       organization := "cc.clv",
       version := "0.1-SNAPSHOT",
+      scalacOptions ++= Seq("-deprecation"),
       scalaVersion := "2.9.1",
       libraryDependencies ++= Seq(
         // test

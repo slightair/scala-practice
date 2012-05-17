@@ -7,5 +7,5 @@ object ExampleAppSpec extends Specification {
     "sample" in {
       "foo" must_== "foo"
     }
-
+  }
 }
